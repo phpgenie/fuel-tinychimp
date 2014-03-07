@@ -44,7 +44,7 @@ class TinyChimp {
 	 */	
 	public static function _init()
 	{
-		$config = \Config::load('tinychimp');
+		$config = \Config::load('tinychimp', true);
 		
 		if (empty($config['api_key']))
 		{
